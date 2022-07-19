@@ -86,6 +86,7 @@ following the gateware).
 The Adafruit FT232H board works well (any similar board with this FTDI
 chip should work with `iceprog`). Connect it as follows:
 
+```
 D0 -> SCK
 D1 -> SDO
 D2 -> SDI
@@ -94,6 +95,7 @@ D4 -> SS
 D5 (not connected)
 D6 -> CDONE
 D7 -> CRESET
+```
 
 You may need to invoke `iceprog` as follows:
 
