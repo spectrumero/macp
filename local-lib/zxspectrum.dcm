@@ -1,0 +1,12 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74ALVC164245PVG
+D 16 bit 5v / 3v3 bus translator
+$ENDCMP
+#
+$CMP ZXEdgeConnector
+D Sinclair ZX Spectrum edge connector
+F https://sinclair.wiki.zxnet.co.uk/wiki/ZX_Spectrum_edge_connector
+$ENDCMP
+#
+#End Doc Library

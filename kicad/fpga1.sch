@@ -1,0 +1,498 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title "FPGA IO banks 2 and 3"
+Date "2021-10-24"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FPGA_Lattice:ICE40HX4K-TQ144 U8
+U 4 1 6174C759
+P 3650 3400
+F 0 "U8" H 3999 3578 50  0000 L CNN
+F 1 "ICE40HX4K-TQ144" H 3999 3487 50  0000 L CNN
+F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 4650 1500 50  0001 R CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40" H 2650 5900 50  0001 C CNN
+	4    3650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0183
+U 1 1 6179594F
+P 3650 1000
+F 0 "#PWR0183" H 3650 850 50  0001 C CNN
+F 1 "+3V3" H 3665 1173 50  0000 C CNN
+F 2 "" H 3650 1000 50  0001 C CNN
+F 3 "" H 3650 1000 50  0001 C CNN
+	1    3650 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1600 3650 1500
+$Comp
+L Device:C C25
+U 1 1 6179726C
+P 3500 1500
+F 0 "C25" V 3752 1500 50  0000 C CNN
+F 1 "100nF" V 3661 1500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3538 1350 50  0001 C CNN
+F 3 "~" H 3500 1500 50  0001 C CNN
+	1    3500 1500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3650 1500
+$Comp
+L power:GND #PWR0184
+U 1 1 61797EE0
+P 3350 1500
+F 0 "#PWR0184" H 3350 1250 50  0001 C CNN
+F 1 "GND" H 3355 1327 50  0000 C CNN
+F 2 "" H 3350 1500 50  0001 C CNN
+F 3 "" H 3350 1500 50  0001 C CNN
+	1    3350 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L FPGA_Lattice:ICE40HX4K-TQ144 U8
+U 3 1 617A74F6
+P 9500 3400
+F 0 "U8" H 9899 3628 50  0000 L CNN
+F 1 "ICE40HX4K-TQ144" H 9899 3537 50  0000 L CNN
+F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 10500 1500 50  0001 R CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40" H 8500 5900 50  0001 C CNN
+	3    9500 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1000 3650 1100
+$Comp
+L Device:C C24
+U 1 1 6186A6A7
+P 3500 1100
+F 0 "C24" V 3248 1100 50  0000 C CNN
+F 1 "100nF" V 3339 1100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3538 950 50  0001 C CNN
+F 3 "~" H 3500 1100 50  0001 C CNN
+	1    3500 1100
+	0    1    1    0   
+$EndComp
+Connection ~ 3650 1100
+Wire Wire Line
+	3650 1100 3650 1500
+Wire Wire Line
+	3350 1500 3350 1100
+Connection ~ 3350 1500
+$Comp
+L power:+3V3 #PWR0185
+U 1 1 61877E63
+P 9500 1400
+F 0 "#PWR0185" H 9500 1250 50  0001 C CNN
+F 1 "+3V3" H 9515 1573 50  0000 C CNN
+F 2 "" H 9500 1400 50  0001 C CNN
+F 3 "" H 9500 1400 50  0001 C CNN
+	1    9500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2000 9500 1900
+$Comp
+L Device:C C27
+U 1 1 61877E6A
+P 9350 1900
+F 0 "C27" V 9602 1900 50  0000 C CNN
+F 1 "100nF" V 9511 1900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9388 1750 50  0001 C CNN
+F 3 "~" H 9350 1900 50  0001 C CNN
+	1    9350 1900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9500 1900
+$Comp
+L power:GND #PWR0186
+U 1 1 61877E71
+P 9200 1900
+F 0 "#PWR0186" H 9200 1650 50  0001 C CNN
+F 1 "GND" H 9205 1727 50  0000 C CNN
+F 2 "" H 9200 1900 50  0001 C CNN
+F 3 "" H 9200 1900 50  0001 C CNN
+	1    9200 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 1400 9500 1500
+$Comp
+L Device:C C26
+U 1 1 61877E78
+P 9350 1500
+F 0 "C26" V 9098 1500 50  0000 C CNN
+F 1 "100nF" V 9189 1500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9388 1350 50  0001 C CNN
+F 3 "~" H 9350 1500 50  0001 C CNN
+	1    9350 1500
+	0    1    1    0   
+$EndComp
+Connection ~ 9500 1500
+Wire Wire Line
+	9500 1500 9500 1900
+Wire Wire Line
+	9200 1900 9200 1500
+Connection ~ 9200 1900
+Wire Wire Line
+	1950 4900 3150 4900
+Wire Wire Line
+	1950 4800 3150 4800
+Wire Wire Line
+	1950 4700 3150 4700
+Wire Wire Line
+	1950 4600 3150 4600
+Wire Wire Line
+	1950 4500 3150 4500
+Wire Wire Line
+	1950 4400 3150 4400
+Wire Wire Line
+	1950 4300 3150 4300
+Wire Wire Line
+	1950 4200 3150 4200
+Text GLabel 8500 3600 0    50   Input ~ 0
+3v3_CLK
+Text GLabel 8500 3700 0    50   Input ~ 0
+3v3_RESET
+Wire Wire Line
+	8500 3600 9000 3600
+Wire Wire Line
+	8500 3700 9000 3700
+Wire Wire Line
+	9000 2600 7550 2600
+Wire Wire Line
+	7550 2700 9000 2700
+Wire Wire Line
+	7550 2800 9000 2800
+Wire Wire Line
+	7550 2900 9000 2900
+Wire Wire Line
+	7550 3000 9000 3000
+Wire Wire Line
+	7550 3100 9000 3100
+Wire Wire Line
+	7550 3200 9000 3200
+Wire Wire Line
+	7550 3300 9000 3300
+Text GLabel 8500 3400 0    50   Output ~ 0
+ADDR_OE_L
+Text GLabel 8500 3500 0    50   Output ~ 0
+ADDR_DIR
+Wire Wire Line
+	8500 3400 9000 3400
+Wire Wire Line
+	8500 3500 9000 3500
+Wire Wire Line
+	8500 3800 9000 3800
+Wire Wire Line
+	8500 3900 9000 3900
+Wire Wire Line
+	8500 4000 9000 4000
+Wire Wire Line
+	8500 4100 9000 4100
+Wire Wire Line
+	8500 4200 9000 4200
+Wire Wire Line
+	8500 4300 9000 4300
+Wire Wire Line
+	8500 4400 9000 4400
+Wire Wire Line
+	3150 2300 3000 2300
+Wire Wire Line
+	3000 2300 3000 2200
+Wire Wire Line
+	3000 2200 1900 2200
+Wire Wire Line
+	3150 2400 2750 2400
+Wire Wire Line
+	2750 2400 2750 2250
+Wire Wire Line
+	2750 2250 1300 2250
+Wire Wire Line
+	1300 2250 1300 2300
+Wire Wire Line
+	1300 2300 1400 2300
+Wire Wire Line
+	3150 2500 2700 2500
+Wire Wire Line
+	2700 2500 2700 2300
+Wire Wire Line
+	2700 2300 1900 2300
+Wire Wire Line
+	3150 2600 2650 2600
+Wire Wire Line
+	2650 2600 2650 2350
+Wire Wire Line
+	2650 2350 1300 2350
+Wire Wire Line
+	1300 2350 1300 2400
+Wire Wire Line
+	1300 2400 1400 2400
+Wire Wire Line
+	1900 2400 2600 2400
+Wire Wire Line
+	2600 2400 2600 2700
+Wire Wire Line
+	2600 2700 3150 2700
+Wire Wire Line
+	3150 2800 2550 2800
+Wire Wire Line
+	2550 2800 2550 2450
+Wire Wire Line
+	2550 2450 1300 2450
+Wire Wire Line
+	1300 2450 1300 2500
+Wire Wire Line
+	1300 2500 1400 2500
+Wire Wire Line
+	1900 2500 2500 2500
+Wire Wire Line
+	2500 2500 2500 2900
+Wire Wire Line
+	2500 2900 3150 2900
+Wire Wire Line
+	3150 3000 2450 3000
+Wire Wire Line
+	2450 3000 2450 2550
+Wire Wire Line
+	2450 2550 1300 2550
+Wire Wire Line
+	1300 2550 1300 2600
+Wire Wire Line
+	1300 2600 1400 2600
+Wire Wire Line
+	1900 2600 2400 2600
+Wire Wire Line
+	2400 2600 2400 3100
+Wire Wire Line
+	2400 3100 3150 3100
+Wire Wire Line
+	3150 3200 2350 3200
+Wire Wire Line
+	2350 3200 2350 2650
+Wire Wire Line
+	2350 2650 1300 2650
+Wire Wire Line
+	1300 2650 1300 2700
+Wire Wire Line
+	1300 2700 1400 2700
+Wire Wire Line
+	1900 2700 2300 2700
+Wire Wire Line
+	2300 2700 2300 3300
+Wire Wire Line
+	2300 3300 3150 3300
+Wire Wire Line
+	2250 3400 2250 2750
+Wire Wire Line
+	2250 2750 1300 2750
+Wire Wire Line
+	1300 2750 1300 2800
+Wire Wire Line
+	1300 2800 1400 2800
+Wire Wire Line
+	1900 2800 2200 2800
+Wire Wire Line
+	2200 2800 2200 3500
+Wire Wire Line
+	2200 3500 3150 3500
+Wire Wire Line
+	2250 3400 3150 3400
+Wire Wire Line
+	3150 3600 1000 3600
+Wire Wire Line
+	1000 3600 1000 2900
+Wire Wire Line
+	1000 2900 1400 2900
+Wire Wire Line
+	2150 3700 2150 2900
+Wire Wire Line
+	2150 2900 1900 2900
+Wire Wire Line
+	2150 3700 3150 3700
+Wire Wire Line
+	3150 3800 950  3800
+Wire Wire Line
+	950  3800 950  3000
+Wire Wire Line
+	950  3000 1400 3000
+Wire Wire Line
+	3150 3900 2100 3900
+Wire Wire Line
+	2100 3900 2100 3000
+Wire Wire Line
+	2100 3000 1900 3000
+Wire Wire Line
+	3150 4000 900  4000
+Wire Wire Line
+	900  4000 900  3100
+Wire Wire Line
+	900  3100 1400 3100
+Wire Wire Line
+	3150 4100 2050 4100
+Wire Wire Line
+	2050 4100 2050 3100
+Wire Wire Line
+	2050 3100 1900 3100
+$Comp
+L Connector_Generic:Conn_02x14_Odd_Even J2
+U 1 1 617DFEF5
+P 1600 2400
+F 0 "J2" H 1650 3217 50  0000 C CNN
+F 1 "Conn_02x14_Odd_Even" H 1650 3126 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x14_P2.54mm_Vertical" H 1600 2400 50  0001 C CNN
+F 3 "~" H 1600 2400 50  0001 C CNN
+	1    1600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2200 1300 2200
+Wire Wire Line
+	1300 2200 1300 2150
+Wire Wire Line
+	1300 2150 3050 2150
+Wire Wire Line
+	3050 2150 3050 2200
+Wire Wire Line
+	3050 2200 3150 2200
+Text GLabel 1400 2100 0    50   BiDi ~ 0
+IOT_220
+Text GLabel 1900 2100 2    50   BiDi ~ 0
+IOT_221
+Wire Wire Line
+	1400 1800 950  1800
+$Comp
+L power:GND #PWR0187
+U 1 1 617F7C09
+P 950 1800
+F 0 "#PWR0187" H 950 1550 50  0001 C CNN
+F 1 "GND" H 955 1627 50  0000 C CNN
+F 2 "" H 950 1800 50  0001 C CNN
+F 3 "" H 950 1800 50  0001 C CNN
+	1    950  1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0188
+U 1 1 617F8295
+P 2300 1800
+F 0 "#PWR0188" H 2300 1650 50  0001 C CNN
+F 1 "+3V3" V 2315 1928 50  0000 L CNN
+F 2 "" H 2300 1800 50  0001 C CNN
+F 3 "" H 2300 1800 50  0001 C CNN
+	1    2300 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 1800 2050 1800
+Text GLabel 1400 1900 0    50   BiDi ~ 0
+IOT_197
+Wire Wire Line
+	1900 1900 2050 1900
+Wire Wire Line
+	2050 1900 2050 1800
+Connection ~ 2050 1800
+Wire Wire Line
+	2050 1800 2300 1800
+Text GLabel 1950 4600 0    50   BiDi ~ 0
+3v3_A0
+Text GLabel 1950 4700 0    50   BiDi ~ 0
+3v3_A1
+Text GLabel 1950 4800 0    50   BiDi ~ 0
+3v3_A2
+Text GLabel 1950 4900 0    50   BiDi ~ 0
+3v3_A3
+Text GLabel 1950 4200 0    50   BiDi ~ 0
+3v3_A15
+Text GLabel 1950 4300 0    50   BiDi ~ 0
+3v3_A14
+Text GLabel 1950 4400 0    50   BiDi ~ 0
+3v3_A13
+Text GLabel 1950 4500 0    50   BiDi ~ 0
+3v3_A12
+Text Label 2350 2150 0    50   ~ 0
+IOL_2A
+Text Label 2700 2200 0    50   ~ 0
+IOL_2B
+Text Label 2350 2250 0    50   ~ 0
+IOL_3A
+Text Label 2650 2300 0    50   ~ 0
+IOL_3B
+Text Label 2200 2350 0    50   ~ 0
+IOL_4A
+Text Label 2450 2400 0    50   ~ 0
+IOL_4B
+Text Label 2200 2450 0    50   ~ 0
+IOL_5A
+Text Label 2450 2500 0    50   ~ 0
+IOL_5B
+Text Label 2750 3000 0    50   ~ 0
+IOL_8A
+Text Label 2750 3100 0    50   ~ 0
+IOL_8B
+Text Label 2750 3200 0    50   ~ 0
+IOL_10A
+Text Label 2750 3300 0    50   ~ 0
+IOL_10B
+Text Label 2750 3400 0    50   ~ 0
+IOL_12A
+Text Label 2750 3500 0    50   ~ 0
+IOL_12B
+Text Label 2750 3600 0    50   ~ 0
+IOL_13A
+Text Label 2750 3700 0    50   ~ 0
+IOL_13B
+Text Label 2750 3800 0    50   ~ 0
+IOL_14A
+Text Label 2750 3900 0    50   ~ 0
+IOL_14B
+Text Label 2750 4000 0    50   ~ 0
+IOL_17A
+Text Label 2750 4100 0    50   ~ 0
+IOL_17B
+Text GLabel 7550 2700 0    50   BiDi ~ 0
+3v3_D0
+Text GLabel 7550 2800 0    50   BiDi ~ 0
+3v3_D1
+Text GLabel 7550 2900 0    50   BiDi ~ 0
+3v3_D2
+Text GLabel 7550 3200 0    50   BiDi ~ 0
+3v3_D3
+Text GLabel 7550 3300 0    50   BiDi ~ 0
+3v3_D4
+Text GLabel 7550 3100 0    50   BiDi ~ 0
+3v3_D5
+Text GLabel 7550 3000 0    50   BiDi ~ 0
+3v3_D6
+Text GLabel 7550 2600 0    50   BiDi ~ 0
+3v3_D7
+Text GLabel 8500 3800 0    50   Output ~ 0
+DATA_DIR
+Text GLabel 8500 3900 0    50   Output ~ 0
+DATA_OE_L
+Text GLabel 8500 4000 0    50   Input ~ 0
+3v3_INT
+Text GLabel 8500 4100 0    50   Output ~ 0
+3v3_INT_OUT
+Text GLabel 8500 4300 0    50   Input ~ 0
+3v3_WAIT
+Text GLabel 8500 4400 0    50   Output ~ 0
+3v3_WAIT_OUT
+Text GLabel 8500 4200 0    50   Output ~ 0
+3v3_NMI
+Text GLabel 1400 2000 0    50   BiDi ~ 0
+IOT_217
+Text GLabel 1900 2000 2    50   BiDi ~ 0
+IOT_219
+$EndSCHEMATC
