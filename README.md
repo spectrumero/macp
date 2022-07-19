@@ -1,4 +1,4 @@
-#ZX Make-a-Chip Pro
+# ZX Make-a-Chip Pro
 
 Back in the day, there was some software for the Sinclair Spectrum (often
 advertised today as "VERY R@RE!!!!11" on eBay) called Make-a-Chip, by
@@ -22,11 +22,11 @@ hold the FPGA's "gateware" (with room left over for other uses),
 a crystal oscillator, interface electronics for the 3.3v to 5v level
 translation, and 25 GPIOs for connecting to other things.
 
-##The PCB
+## The PCB
 
 A 4-layer PCB. This has been successfully made using PCBWay.
 
-##Major parts
+## Major parts
 
 The FPGA is an iCE40-HX4K-TQ144. Unfortunately the HX1K has a sufficiently
 different pinout that it won't work. When using arachne-pnr/nextpnr during
@@ -62,7 +62,7 @@ PLL.
 
 The remainder of the devices on the board should be pretty widely availble.
 
-##Special symbols
+## Special symbols
 
 There are two symbols unique to the project: the ZX edge connector
 (designed for through hole mounting) and a schematic symbol for the
